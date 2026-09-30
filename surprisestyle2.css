@@ -5,9 +5,37 @@ body, .background, .n {
 }
 
 body {
+  margin: 0;
   width: 100vw;
   height: 100vh;
   background-color: #bbb;
+  overflow: hidden;
+}
+
+.logo-scene {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  z-index: 1;
+}
+
+.love-message {
+  max-width: calc(100vw - 32px);
+  margin: 0;
+  color: #f5e4e3;
+  font: italic 500 clamp(17px, 3vw, 24px)/1.25 'Cormorant Garamond', Georgia, serif;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(163, 239, 226, .55), 0 0 24px rgba(163, 239, 226, .3);
+  animation: message-glows 3s ease-in-out infinite;
+}
+
+@keyframes message-glows {
+  50% { text-shadow: 0 0 17px rgba(163, 239, 226, .8), 0 0 34px rgba(163, 239, 226, .48); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .love-message { animation: none; }
 }
 
 .starfield {
@@ -166,7 +194,7 @@ body {
   color: white;
 }
 
-.n::after{
+.n::after {
   content: 'N';
   font-family: inherit;
   font-size: inherit;
