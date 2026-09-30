@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f2eee5">
+  <meta name="description" content="Une petite invitation pour Léa.">
+  <title>Pour toi, Nellie</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="page">
+    <section class="screen letter-screen is-active" id="letter-screen" aria-labelledby="letter-label">
+      <p class="letter-label" id="letter-label">POUR TOI, NELLIE</p>
+      <button class="envelope-button" type="button" aria-label="Ouvrir la lettre">
+        <span class="envelope" aria-hidden="true">
+          <span class="envelope-flap"></span>
+          <span class="envelope-fold"></span>
+          <span class="envelope-seal">♥</span>
+        </span>
+      </button>
+      <p class="touch-hint">TOUCHE LA LETTRE</p>
+    </section>
+
+    <section class="screen invite-screen" id="invite-screen" aria-labelledby="invite-title" aria-hidden="true">
+      <article class="invitation-card question-card">
+        <p class="overline">POUR TOI, NELLIE</p>
+        <h1 id="invite-title">Tu voudrais sortir avec moi&nbsp;?</h1>
+        <p class="aside-note">(dire non ne sert à rien, mais tu peux essayer)</p>
+        <div class="answer-actions">
+          <button class="button button-primary" id="yes-button" type="button">Oui</button>
+          <button class="button button-secondary" id="no-button" type="button">Non</button>
+        </div>
+      </article>
+    </section>
+
+    <section class="screen plan-screen" id="plan-screen" aria-labelledby="plan-title" aria-hidden="true">
+      <article class="invitation-card plan-card">
+        <p class="overline">PARFAIT</p>
+        <h1 id="plan-title">GENIAL !</h1>
+        <p class="plan-name"><strong>Je t'aime.</strong> Oui, t'as bien lu.</p>
+        <img src="image.png" alt="cat" class="plan-image">
+        
+        <a href="surprise.html" class="sexy-button">Surprise</a>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
