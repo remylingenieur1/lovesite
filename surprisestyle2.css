@@ -1,0 +1,335 @@
+body, .background, .n {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #bbb;
+}
+
+.starfield {
+  width: 100%;
+  height: 100%;
+  background-image:
+    radial-gradient(circle at 28px 2px, #A3EFE2 0px, #A3EFE2 1px, transparent 1px),
+    radial-gradient(circle at 96px 2px, #A3EFE2 0px, #A3EFE2 1px, transparent 1px),
+    radial-gradient(circle at 168px 2px, #A3EFE2 0px, #A3EFE2 1px, transparent 1px),
+    radial-gradient(circle at 4px 4px, #A3EFE2 0px, #A3EFE2 1px, transparent 1px),
+    radial-gradient(circle at 68px 4px, #A3EFE2 0px, #A3EFE2 1px, transparent 1px),
+    radial-gradient(circle at 152px 4px, #A3EFE2 0px, #A3EFE2 1px, transparent 1px),
+    radial-gradient(circle at 216px 4px, #A3EFE2 0px, #A3EFE2 1px, transparent 1px),
+    radial-gradient(circle at 16px 8px, #A3EFE2 0px, #A3EFE2 1px, transparent 1px),
+    radial-gradient(circle at 116px 8px, #A3EFE2 0px, #A3EFE2 1px, transparent 1px),
+    radial-gradient(circle at 200px 8px, #D3EFE2 0px, #D3EFE2 1px, transparent 1px),
+    radial-gradient(circle at 40px 12px, #CCC53B 0px, #CCC53B 1px, transparent 1px),
+    radial-gradient(circle at 132px 12px, #A3EFE2 0px, #A3EFE2 1px, transparent 1px),
+    radial-gradient(circle at 228px 12px, #D3EFE2 0px, #D3EFE2 1px, transparent 1px),
+    radial-gradient(circle at 60px 16px, #A3EFE2 0px, #A3EFE2 1px, transparent 1px),
+    radial-gradient(circle at 88px 16px, #D3EFE2 0px, #D3EFE2 1px, transparent 2px),
+    radial-gradient(circle at 164px 16px, #A3EFE2 0px, #A3EFE2 1px, transparent 1px),
+    radial-gradient(circle at 4px 20px, #A3EFE2 0px, #A3EFE2 1px, transparent 1px),
+    radial-gradient(circle at 24px 20px, #A3EFE2 0px, #A3EFE2 1px, transparent 2px),
+    radial-gradient(circle at 120px 20px, #D3EFE2 0px, #D3EFE2 1px, transparent 2px),
+    radial-gradient(circle at 148px 20px, #D3EFE2 0px, #D3EFE2 1px, transparent 1px),
+    radial-gradient(circle at 188px 20px, #A3EFE2 0px, #A3EFE2 1px, transparent 1px),
+    radial-gradient(circle at 104px 24px, #A3EFE2 0px, #A3EFE2 1px, transparent 1px),
+    radial-gradient(circle at 212px 24px, #D3EFE2 0px, #D3EFE2 1px, transparent 1px),
+    radial-gradient(circle at 40px 28px, #A3EFE2 0px, #A3EFE2 1px, transparent 1px),
+    radial-gradient(circle at 80px 28px, #D3EFE2 0px, #D3EFE2 1px, transparent 1px),
+    radial-gradient(circle at 172px 28px, #D3EFE2 0px, #D3EFE2 1px, transparent 1px),
+    radial-gradient(circle at 136px 32px, #A3EFE2 0px, #A3EFE2 1px, transparent 1px),
+    radial-gradient(circle at 88px 40px, #A3EFE2 0px, #A3EFE2 1px, transparent 1px),
+    radial-gradient(circle at 32px 44px, #A3EFE2 0px, #A3EFE2 1px, transparent 1px),
+    radial-gradient(circle at 228px 48px, #D3EFE2 0px, #D3EFE2 1px, transparent 1px),
+    radial-gradient(circle at 8px 56px, #CCC53B 0px, #CCC53B 1px, transparent 1px),
+    radial-gradient(circle at 108px 56px, #D3EFE2 0px, #D3EFE2 1px, transparent 1px),
+    radial-gradient(circle at 132px 64px, #A3EFE2 0px, #A3EFE2 1px, transparent 1px),
+    radial-gradient(circle at 144px 68px, #A3EFE2 0px, #A3EFE2 1px, transparent 1px),
+    radial-gradient(circle at 192px 68px, #A3EFE2 0px, #A3EFE2 1px, transparent 1px),
+    radial-gradient(circle at 224px 68px, #D3EFE2 0px, #D3EFE2 1px, transparent 2px),
+    radial-gradient(circle at 32px 72px, #D3EFE2 0px, #D3EFE2 1px, transparent 1px),
+    radial-gradient(circle at 124px 76px, #A3EFE2 0px, #A3EFE2 1px, transparent 1px),
+    radial-gradient(circle at 204px 76px, #A3EFE2 0px, #A3EFE2 1px, transparent 1px),
+    radial-gradient(circle at 140px 80px, #A3EFE2 0px, #A3EFE2 1px, transparent 1px),
+    radial-gradient(circle at 4px 88px, #D3EFE2 0px, #D3EFE2 1px, transparent 1px),
+    radial-gradient(circle at 224px 88px, #A3EFE2 0px, #A3EFE2 1px, transparent 1px),
+    radial-gradient(circle at 152px 96px, #A3EFE2 0px, #A3EFE2 1px, transparent 1px),
+    radial-gradient(circle at 204px 100px, #A3EFE2 0px, #A3EFE2 1px, transparent 1px),
+    radial-gradient(circle at 80px 104px, #A3EFE2 0px, #A3EFE2 1px, transparent 1px),
+    radial-gradient(circle at 156px 108px, #CCC53B 0px, #CCC53B 1px, transparent 1px),
+    radial-gradient(circle at 40px 112px, #CCC53B 0px, #CCC53B 1px, transparent 1px),
+    radial-gradient(circle at 12px 116px, #A3EFE2 0px, #A3EFE2 1px, transparent 1px),
+    radial-gradient(circle at 220px 116px, #A3EFE2 0px, #A3EFE2 1px, transparent 1px),
+    radial-gradient(circle at 40px 128px, #A3EFE2 0px, #A3EFE2 1px, transparent 1px),
+    radial-gradient(circle at 216px 132px, #CCC53B 0px, #CCC53B 1px, transparent 1px),
+    radial-gradient(circle at 232px 132px, #A3EFE2 0px, #A3EFE2 1px, transparent 1px),
+    radial-gradient(circle at 20px 136px, #CCC53B 0px, #CCC53B 1px, transparent 1px);
+  position: absolute;
+  z-index: -10;
+}
+
+.nova {
+  width: 16px;
+  height: 16px;
+  background-image: radial-gradient(farthest-side, rgba(224,235,234) 0%, rgba(224,194,110, 0.5) 50%, transparent 100%);
+  position: absolute;
+  left: 186px;
+  top: 115px;
+  z-index: 50;
+  animation: 5s nova-animation linear forwards infinite;
+  animation-delay: 0.5s;
+  transform: scale(0.3);
+}
+
+.nova::after {
+  opacity: 0;
+  content: ' ';
+  display: block;
+  width: 128px;
+  height: 128px;
+  position: absolute;
+  left: -56px;
+  top: -56px;
+  background-image: radial-gradient(farthest-side, rgb(234,245,244) 0%, transparent 100%);
+  z-index: 55;
+  animation: 5s nova-flare linear forwards infinite;
+  animation-delay: 0.5s;
+}
+
+@keyframes nova-animation {
+  0%   { transform: scale(0.3); }
+  15%  { transform: scale(1); }
+  20%  { transform: scale(2.5); }
+  25%  { transform: scale(1); }
+  40%  { transform: scale(0.3); }
+  60%  { transform: scale(0.3); }
+  80%  { transform: scale(0.3); }
+  100% { transform: scale(0.3); }
+}
+
+@keyframes nova-flare {
+  0%   { opacity: 0; }
+  10%  { opacity: 0.8; }
+  20%  { opacity: 0.8; }
+  40%  { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+.background {
+  width: 240px;
+  height: 240px;
+  background-color: rgb(2,2,20);
+  background-image: radial-gradient(circle at 50% 90%, rgb(74,94,108), rgb(44,53,94) 75%, rgb(9,11,11) 90%);
+  overflow: hidden;
+  position: relative;
+  z-index: -20;
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.8);
+}
+
+.background::after,
+.background::before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  z-index: 30;
+}
+
+.background::after {
+  border-top: 6px outset #dadada;
+  border-left: 6px outset #dadada;
+  border-right: 6px outset #888;
+  border-bottom: 6px outset #888;
+  width: calc(100% - 12px);
+  height: calc(100% - 12px);
+}
+
+.background::before {
+  width: calc(100% - 12px);
+  height: calc(100% - 12px);
+  border: 3px solid #aaa;
+  z-index: 40;
+}
+
+.n {
+  text-shadow: 0px 0px 7px rgba(255,255,255,0.4);
+  width: 100%;
+  height: 100%;
+  font-size: 200px;
+  margin-top: -30px;
+  font-family: "Cormorant Garamond", "Garamond", "Century", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 600;
+  color: white;
+}
+
+.n::after{
+  content: 'N';
+  font-family: inherit;
+  font-size: inherit;
+  color: white;
+  position: absolute;
+  clip-path: rect(0% 46% 100% 0%);
+  z-index: 50;
+}
+
+.planet {
+  width: 550px;
+  height: 450px;
+  border-radius: 50%;
+  background-image: black;
+  background-image: radial-gradient(farthest-side, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 96%, rgba(32,153,202,0.75) 97%, rgba(32,153,202,0) 100%);
+  position: absolute;
+  top: 57%;
+  z-index: 20;
+}
+
+.comet {
+  position: absolute;
+  left: 50%;
+  display: block;
+  z-index: 10;
+  filter: blur(4px);
+  transform: rotateZ(60deg) translateY(-400px);
+  animation: 5s animate-comet-standard linear forwards infinite;
+}
+
+.comet::after {
+  position: absolute;
+  content: ' ';
+  display: block;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.comet01 {
+  top: 0%;
+  border-bottom: 150px solid rgba(255,255,255,0.9);
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+
+.comet01::after {
+  top: 140px;
+  left: -10px;
+  width: 20px;
+  height: 20px;
+}
+
+.comet02 {
+  top: 20%;
+  border-bottom: 140px solid rgba(255,255,255,0.9);
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+}
+
+.comet02::after {
+  top: 130px;
+  left: -8px;
+  width: 16px;
+  height: 16px;
+}
+
+.comet03 {
+  top: 25%;
+  border-bottom: 160px solid rgba(255,255,255,0.9);
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+}
+
+.comet03::after {
+  top: 148px;
+  left: -12px;
+  width: 24px;
+  height: 24px;
+}
+
+.comet04 {
+  top: -5%;
+  border-bottom: 100px solid rgba(255,255,255,0.85);
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  animation-name: animate-comet-fast;
+}
+
+.comet04::after {
+  top: 96px;
+  left: -4px;
+  width: 8px;
+  height: 8px;
+}
+
+.comet05 {
+  top: 45%;
+  border-bottom: 160px solid rgba(255,255,255,1);
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  z-index: 22;
+  animation-name: animate-comet-fast;
+}
+
+.comet05::after {
+  top: 140px;
+  left: -20px;
+  width: 40px;
+  height: 40px;
+}
+
+.comet05::before {
+  position: absolute;
+  content: ' ';
+  display: block;
+  border-radius: 50%;
+  border: 10px solid rgba(255,255,0,0.6);
+  top: 130px;
+  left: -30px;
+  width: 40px;
+  height: 40px;
+  filter: blur(6px);
+}
+
+.comet01 { animation-delay: 0s; }
+.comet02 { animation-delay: 0.5s; }
+.comet03 { animation-delay: 1.5s; }
+.comet04 { animation-delay: 2.5s; }
+.comet05 { animation-delay: 2.5s; }
+
+@keyframes animate-comet-standard {
+  from {
+    transform: rotateZ(60deg) translateY(-300px);
+  }
+  to {
+    transform: rotateZ(60deg) translateY(500px);
+  }
+}
+
+@keyframes animate-comet-fast {
+  from {
+    transform: rotateZ(60deg) translateY(-400px);
+  }
+  to {
+    transform: rotateZ(60deg) translateY(600px);
+  }
+}
+
+.front-comet-flare {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  background-image: radial-gradient(circle at 40px 160px, transparent, rgba(255,255,255,0.4) 50%, rgba(255,255,255,0.55) 100%);
+  z-index: 25;
+  opacity: 0;
+  animation: 5s animate-front-comet-flare linear forwards infinite;
+  animation-delay: 0.25s;
+}
+
+@keyframes animate-front-comet-flare {
+  0% { opacity: 0; }
+  60% { opacity: 0; }
+  80% { opacity: 1; }
+  100% { opacity: 0; }
+}
