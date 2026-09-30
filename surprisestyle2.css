@@ -361,3 +361,67 @@ body {
   80% { opacity: 1; }
   100% { opacity: 0; }
 }
+
+.love-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(7px, 1.8vw, 13px);
+  padding: 10px clamp(12px, 2vw, 20px);
+  border: 1px solid rgba(185, 244, 231, .56);
+  border-radius: 999px;
+  background: rgba(2, 8, 21, .88);
+  box-shadow: 0 0 22px rgba(92, 224, 203, .22), inset 0 0 13px rgba(92, 224, 203, .08);
+}
+
+.message-copy {
+  white-space: nowrap;
+  background: linear-gradient(100deg, #f5e4e3 20%, #fff 48%, #a3efe2 58%, #f5e4e3 78%);
+  background-size: 220% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: note-shimmer 5s 1s ease-in-out infinite, note-arrives .8s ease both;
+  font-size: clamp(19px, 3.4vw, 29px);
+  text-shadow: 0 0 13px rgba(163, 239, 226, .38);
+}
+
+.message-heart {
+  color: #f1a4ba;
+  font: normal 14px/1 sans-serif;
+  text-shadow: 0 0 9px rgba(163, 239, 226, .8);
+  animation: note-heartbeat 1.8s ease-in-out infinite;
+}
+
+.message-spark {
+  color: #b9f4e7;
+  font: normal 14px/1 sans-serif;
+  animation: note-sparkle 2.4s ease-in-out infinite;
+}
+
+.message-spark:last-child { animation-delay: 1.2s; }
+
+@keyframes note-arrives {
+  from { opacity: .55; transform: translateY(8px); filter: blur(2px); }
+  to { opacity: 1; transform: translateY(0); filter: blur(0); }
+}
+
+@keyframes note-shimmer {
+  0%, 100% { background-position: 100% center; }
+  50% { background-position: 0% center; }
+}
+
+@keyframes note-heartbeat {
+  0%, 100% { transform: scale(1); }
+  14%, 42% { transform: scale(1.25); }
+  28%, 56% { transform: scale(1); }
+}
+
+@keyframes note-sparkle {
+  0%, 100% { opacity: .45; transform: scale(.8) rotate(0); }
+  50% { opacity: 1; transform: scale(1.2) rotate(35deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .message-copy, .message-heart, .message-spark { animation: none; }
+}

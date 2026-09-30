@@ -36,3 +36,66 @@ canvas {
 @media (prefers-reduced-motion: reduce) {
   .love-message { animation: none; }
 }
+
+.love-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(7px, 1.8vw, 13px);
+  padding: 11px clamp(13px, 2vw, 21px);
+  border: 1px solid rgba(241, 198, 207, .45);
+  border-radius: 999px;
+  background: rgba(20, 6, 12, .78);
+  box-shadow: 0 0 20px rgba(245, 105, 145, .16), inset 0 0 12px rgba(245, 105, 145, .07);
+}
+
+.message-copy {
+  white-space: nowrap;
+  background: linear-gradient(100deg, #f5d9de 20%, #fff 48%, #f0aebe 58%, #f5d9de 78%);
+  background-size: 220% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: clamp(20px, 3.3vw, 29px);
+  animation: note-shimmer 5s 1s ease-in-out infinite, note-arrives .8s ease both;
+}
+
+.message-heart {
+  color: #fa92ad;
+  font: normal 14px/1 sans-serif;
+  text-shadow: 0 0 9px rgba(250, 105, 145, .8);
+  animation: note-heartbeat 1.8s ease-in-out infinite;
+}
+
+.message-spark {
+  color: #f4d8aa;
+  font: normal 14px/1 sans-serif;
+  animation: note-sparkle 2.4s ease-in-out infinite;
+}
+
+.message-spark:last-child { animation-delay: 1.2s; }
+
+@keyframes note-arrives {
+  from { opacity: .55; transform: translateY(8px); filter: blur(2px); }
+  to { opacity: 1; transform: translateY(0); filter: blur(0); }
+}
+
+@keyframes note-shimmer {
+  0%, 100% { background-position: 100% center; }
+  50% { background-position: 0% center; }
+}
+
+@keyframes note-heartbeat {
+  0%, 100% { transform: scale(1); }
+  14%, 42% { transform: scale(1.25); }
+  28%, 56% { transform: scale(1); }
+}
+
+@keyframes note-sparkle {
+  0%, 100% { opacity: .45; transform: scale(.8) rotate(0); }
+  50% { opacity: 1; transform: scale(1.2) rotate(35deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .message-copy, .message-heart, .message-spark { animation: none; }
+}
